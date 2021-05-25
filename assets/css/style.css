@@ -145,6 +145,8 @@ footer {
 	color: var(--text-primary-inverse);
 	display: flex;
 	padding: var(--side-gap);
+	justify-content: space-around;
+	align-items: center;
 }
 footer .links {
 	display: flex;
