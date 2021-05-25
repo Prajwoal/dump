@@ -10,9 +10,8 @@
 			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="assets/css/style.css" />
-		<title>Hotels & Resorts | Victoria View Hotels</title>
+		<title>Bills | Victoria View Hotels</title>
 	</head>
-
 	<body>
 		<div class="top-ribbon">
 			<div class="social">
@@ -51,37 +50,55 @@
 				<div class="nav-link"><a href="contact.html">Contact Us</a></div>
 			</nav>
 		</header>
-
-		<div class="hotel-locations">
-			<h1>Our Hotels</h1>
-			<div class="card-contaniner">
-				<div class="hotel-card">
-					<img
-						src="assets/images/locations/hongkong.jpg"
-						class="hotel-loc-img"
-					/>
-					<div class="loc-info">
-						<h3>Hong Kong</h3>
+		<div class="member-container">
+			<div class="member-message">
+				<h1>Retrieve Hotel Bill</h1>
+			</div>
+			<div class="member-form">
+				<form>
+					<div class="two-fields">
+						<div>
+							<label for="fname">Given / First Name</label>
+							<input type="text" name="fname" id="fname" />
+						</div>
+						<div>
+							<label for="lname">Surname / Last Name</label>
+							<input type="text" name="lname" id="lname" />
+						</div>
 					</div>
-				</div>
-				<div class="hotel-card">
-					<img
-						src="assets/images/locations/shangai.jpg"
-						class="hotel-loc-img"
-					/>
-					<div class="loc-info">
-						<h3>Shangai</h3>
+					<label for="hotel">Find Your Hotel</label>
+					<input type="text" name="hotel" id="hotel" />
+					<div class="two-fields">
+						<div>
+							<label for="check-in">Check-in</label>
+							<input type="date" name="check-in" id="check-in" />
+						</div>
+						<div>
+							<label for="check-out">Check-out</label>
+							<input type="date" name="check-out" id="check-out" />
+						</div>
 					</div>
-				</div>
-				<div class="hotel-card">
-					<img src="assets/images/locations/tokyo.jpg" class="hotel-loc-img" />
-					<div class="loc-info">
-						<h3>Tokyo</h3>
+					<p>Payment Method</p>
+					<input type="radio" name="cash" id=cash">
+					<label for="cash">Cash Or Check</label>
+					<input type="radio" name="card" id=card">
+					<label for="card">Credit</label>
+					<div class="digits">
+						<label class="inline-label" for="digits">Enter Last 4 Digits</label>
+						<input type="number" name="digits" id="digits" />
 					</div>
-				</div>
+					<input type="checkbox" name="confirm" id="confirm" />
+					<label for="confirm"
+						>I hereby confirm that I am a registered guest and/or an individual
+						authorized by the individual or entity that is responsible for the
+						charges in the requested hotel bill. I authorize the release and
+						retrieval og the hotel bill for my stay by the means noted
+						above</label
+					>
+					<button class="btn-primary" type="submit">Retrieve Hotel Bill</button>
+				</form>
 			</div>
 		</div>
-
 		<footer>
 			<div class="links">
 				<h4>Quick Links</h4>
