@@ -414,3 +414,17 @@ textarea {
 		width: 98%;
 	}
 }
+
+@media (max-width: 425px) {
+	.top-ribbon,
+	.ribbon-links {
+		display: flex;
+		flex-direction: column;
+	}
+	footer {
+		flex-direction: column;
+	}
+	.cpy {
+		margin-top: 1em;
+	}
+}
